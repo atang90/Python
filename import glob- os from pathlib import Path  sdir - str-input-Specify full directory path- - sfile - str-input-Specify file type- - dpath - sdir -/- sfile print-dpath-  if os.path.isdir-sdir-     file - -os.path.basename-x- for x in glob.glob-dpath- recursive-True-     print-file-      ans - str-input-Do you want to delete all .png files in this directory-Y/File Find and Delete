@@ -1,0 +1,26 @@
+import glob, os
+from pathlib import Path
+
+sdir = str(input("Specify full directory path: "))
+sfile = str(input("Specify file type: "))
+dpath = sdir + '**/*' + sfile
+print(dpath)
+
+if os.path.isdir(sdir):
+    file = [os.path.basename(x) for x in glob.glob(dpath, recursive=True)]
+    print(file)
+
+    ans = str(input("Do you want to delete all .png files in this directory?(Y/N): "))
+    if ans in ["Y","y"]:
+        print('Removing files...')
+        for z in glob.glob(dpath, recursive=True):
+            os.remove(z)
+    else:
+        print('Exiting...')
+        exit()
+else:
+    print('Specified path ' + dpath + ' does not exist! \nExiting...')
+    exit()
+
+
+

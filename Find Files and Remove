@@ -18,15 +18,15 @@ while True:
             print('Removing files...')
             for z in glob.glob(dpath, recursive=True):
                 os.remove(z)
-                print('[' + sfile + '] files have been removed...')
-                finans1 = str(input("Do you want to continue searching for file types?(Y/N): "))
-                if finans1 in ["Y","y"]:
-                    nexans = True
-                else:
-                    nexans = False
-                    print("Exiting...")
-                    break
-                    exit() 
+            print('[' + sfile + '] files have been removed...')
+            finans1 = str(input("Do you want to continue searching for file types?(Y/N): "))
+            if finans1 in ["Y","y"]:
+                nexans = True
+            else:
+                nexans = False
+                print("Exiting...")
+                break
+                exit() 
         else:
             finans2 = str(input("Do you want to continue searching for file types?(Y/N): "))
             if finans2 in ["Y","y"]:
@@ -44,3 +44,4 @@ while True:
 
 
 #/Users/Andrew/Sites/Projects/wordpress/wp-content/plugins/polylang/flags/
+

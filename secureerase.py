@@ -1,10 +1,7 @@
-"""
-
-Simple script to run a secure erase on a Mac OS X - in order to reclaim "purgeable space" 
-
-NOTE:Erasing freespace only works on mounted and writable volumes
-
-"""
+# secureerase.py
+# Andrew, 12/12/2017 (Last Revision)
+# Description of intent: Simple script to run a secure erase on a Mac OS X - in order to reclaim "purgeable space" 
+# NOTE:Erasing freespace only works on mounted and writable volumes
 
 import subprocess
 

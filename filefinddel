@@ -1,8 +1,6 @@
-""" 
-
-This script recursively lists all specified files in a specified directory and gives the user the option to delete the files
- 
-"""
+# filefinddel.py
+# Andrew, 12/12/2017 (Last Revision)
+# Description of intent: Recursively lists all specified files in a specified directory and gives the user the option to delete the files
 
 import glob, os
 from pathlib import Path
